@@ -1,10 +1,3 @@
-# data_collector.py
-
-"""
-Responsável por coletar o histórico de números da roleta de um site
-usando Selenium para automação de navegador.
-"""
-
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -14,19 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 def coletar_historico_com_selenium(url_da_roleta: str, seletor_css: str, tempo_espera_max: int = 15) -> list:
-    """
-    Automatiza o navegador para coletar o histórico de números da roleta.
-
-    Args:
-        url_da_roleta (str): A URL da página da roleta.
-        seletor_css (str): O seletor CSS que identifica os elementos
-                           que contêm os números do histórico na página.
-        tempo_espera_max (int): Tempo máximo em segundos para esperar.
-
-    Returns:
-        list: Lista de inteiros com o histórico coletado (do mais recente 
-              para o mais antigo, como no site) ou lista vazia se falhar.
-    """
     print(f"\n--- Iniciando Coleta de Dados ---")
     print(f"Acessando: {url_da_roleta}")
     

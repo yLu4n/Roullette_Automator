@@ -1,11 +1,3 @@
-# config_data.py
-
-"""
-Armazena as configurações e dados fixos baseados no PDF.
-- Ordem dos números na pista (Race Track).
-- Mapeamento das estratégias (Strategy Map).
-"""
-
 # A ordem dos números na "Race" (pista) da roleta
 RACE_TRACK = [
     0, 32, 15, 19, 4, 21, 2, 25, 17, 34, 6, 27, 13, 36, 11, 30, 8, 
@@ -13,9 +5,6 @@ RACE_TRACK = [
     35, 3, 26
 ]
 
-# Mapeamento das ESTRATÉGIAS (Instruções de aposta do PDF)
-# Formato: { numero_gatilho: [lista_de_apostas_a_fazer] }
-# Cada aposta: {'numero': X, 'vizinhos': Y}
 STRATEGY_MAP = {
     1: [{'numero': 1, 'vizinhos': 3}, {'numero': 3, 'vizinhos': 3}, {'numero': 36, 'vizinhos': 3}],
     2: [{'numero': 2, 'vizinhos': 3}, {'numero': 22, 'vizinhos': 3}, {'numero': 5, 'vizinhos': 3}],

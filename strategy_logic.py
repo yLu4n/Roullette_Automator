@@ -1,4 +1,3 @@
-# Importa os dados fixos
 from config_data import RACE_TRACK, STRATEGY_MAP
 
 # --- Funções Auxiliares (internas) ---

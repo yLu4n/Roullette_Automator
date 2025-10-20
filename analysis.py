@@ -1,28 +1,8 @@
-# analysis.py
-
-"""
-Contém a lógica para analisar um histórico passado de números da roleta
-e verificar a performance das estratégias definidas em strategy_logic.py.
-"""
-
 from collections import defaultdict
-# Importa a função específica necessária da lógica de estratégia
 from strategy_logic import obter_numeros_cobertos 
-# Importa o mapa para saber se uma estratégia existe
 from config_data import STRATEGY_MAP 
 
 def analisar_historico_passado(historico_cronologico: list):
-    """
-    Analisa um histórico de roleta (ordem cronológica) para verificar a
-    performance das estratégias do PDF.
-
-    Args:
-        historico_cronologico (list): Lista de números sorteados, do mais
-                                     antigo para o mais recente.
-
-    Returns:
-        dict: Um dicionário contendo a análise detalhada e o sumário.
-    """
     if not historico_cronologico or len(historico_cronologico) < 2:
         return {
             "erro": "Histórico muito curto para análise (precisa de pelo menos 2 números)."
