@@ -17,8 +17,8 @@ def run_full_automation(historico_max_analise=20):
     Executa o fluxo completo: coleta, análise do passado e sugestão futura.
     """
     
-    URL_DA_ROLETA = "https://app.osniperdocassino.app/jogo/immersive-roulette"
-    SELETOR_CSS_DOS_NUMEROS = "#numeros .numero']" 
+    URL_DA_ROLETA = "https://app.osniperdocassino.app/entrar/?redirect=https%3A%2F%2Fapp.osniperdocassino.app%2F"
+    SELETOR_CSS_DOS_NUMEROS = ".recentNumbers--141d3 immersive2--e3d37 .numbers--ca008 recent-number--d9e03 desktop--80ae3 .number-container--8752e recent-number--7cf3a desktop--377f7 .value--dd5c7" 
 
     print("Iniciando Automação Completa...")
 
